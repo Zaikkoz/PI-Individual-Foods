@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_RECIPES, GET_RECIPE_DETAILS, DIETS_FILTER, ALPHABETICAL_SORT, HEALTH_SCORE_SORT, SEARCH_RECIPE, GET_DIETS, LOCAL_HOST } from './types';
+import { BACK_PAGE, GET_RECIPES, GET_RECIPE_DETAILS, DIETS_FILTER, ALPHABETICAL_SORT, HEALTH_SCORE_SORT, SEARCH_RECIPE, GET_DIETS, LOCAL_HOST } from './types';
 
 
 export function getRecipes() {
@@ -78,3 +78,9 @@ export function healthScoreSort(payload) {
     }
 }
 
+export function cleanPag() {
+    return {
+        type: BACK_PAGE,
+        payload: {}
+    }
+}

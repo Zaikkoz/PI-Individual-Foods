@@ -6,7 +6,7 @@ const router = Router();
 
 
 const getApiInfo = async () => {
-    const apiUrl =  await axios.get(`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`/*`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`*/);
+    const apiUrl =  await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`);
     
     const apiInfo = await apiUrl.data.results.map(e => {
         return {
@@ -41,7 +41,7 @@ const getDbInfo = async () => {
 }
 
 const getApiById = async (id) => {
-    return await axios.get(`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`/*`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&addRecipeInformation=true`*/)
+    return await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&addRecipeInformation=true`)
 }
 
 const getDbById = async (id) => {
@@ -105,7 +105,7 @@ const allDataRecipes = async (req, res) => {
                 );
 
                 if (recipeQuery.length === 0) {
-                    const infoUrl =  await axios.get(`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`/*`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true`*/);
+                    const infoUrl =  await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true`);
                     const info = await infoUrl.data.results.map(e => {
                         return {
                             id: e.id,

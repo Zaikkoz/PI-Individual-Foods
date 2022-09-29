@@ -1,4 +1,4 @@
-import { GET_RECIPES, ADD_RECIPE, GET_RECIPE_DETAILS, DIETS_FILTER, ALPHABETICAL_SORT, HEALTH_SCORE_SORT, SEARCH_RECIPE, GET_DIETS } from '../action/types.js';
+import { BACK_PAGE, GET_RECIPES, ADD_RECIPE, GET_RECIPE_DETAILS, DIETS_FILTER, ALPHABETICAL_SORT, HEALTH_SCORE_SORT, SEARCH_RECIPE, GET_DIETS } from '../action/types.js';
 
 const initialState = {
   recipes: [],
@@ -86,6 +86,12 @@ export default function rootReducer(state = initialState, action) {
           return {
             ...state,
             diets: action.payload
+          }
+
+        case BACK_PAGE:
+          return {
+            ...state,
+            recipeDetails: action.payload
           }
 
         default:

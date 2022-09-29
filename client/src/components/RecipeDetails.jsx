@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRecipeDetails } from '../redux/action';
+import { getRecipeDetails, cleanPag } from '../redux/action';
 import { Link } from 'react-router-dom'
 import "./recipedetails.css";
 
@@ -11,7 +11,10 @@ export default function RecipeDetails(props) {
     const id = props.match.params.id;
     
     useEffect(() => {
-        dispatch(getRecipeDetails(id))
+        dispatch(getRecipeDetails(id));
+        return () => {
+            dispatch(cleanPag())
+        }
     }, [dispatch, id]);
     
     const recipeDetails = useSelector(state => state.recipeDetails);
