@@ -129,11 +129,11 @@ const allDataRecipes = async (req, res) => {
                     if (infoQuery.length === 0) {
                         res.send("Receta no existe");
                     } else {
-                        res.json(infoQuery);
+                        res.status(200).json(infoQuery);
                     }
 
                 } else {
-                    res.json(recipeQuery);
+                    res.status(200).json(recipeQuery);
                 }
             }
             } else {

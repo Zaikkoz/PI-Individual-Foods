@@ -7,6 +7,7 @@ const { Recipe, conn } = require('../../src/db.js');
 const agent = session(app);
 const recipe = {
   name: 'Milanesa a la napolitana',
+  summary: 'sicierto',
 };
 
 describe('Recipe routes', () => {
