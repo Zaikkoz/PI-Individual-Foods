@@ -1,0 +1,127 @@
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;   
+    margin-bottom: 60px;   
+    margin-left: 60px;
+    margin-right: 60px;  
+    padding-left: 150px;
+    padding-right: 150px;
+    border-radius: 10px;
+    background-color: #5454549b;
+}
+
+.initialMsg {
+    padding-top: 3px;   
+    padding-bottom: 3px;   
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    color: #12130F;
+    background-color: #8F8073;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: 700;    
+    margin-top: 60;
+    margin-bottom: 25px;
+    text-shadow: 2px 1px 2px rgba(0,0,0,0.43);
+}
+
+.refreshButton {
+    color: #12130F;
+    background-color: #8F8073;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0,5px, 0,5px;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 3px;
+    border-color: #8F8073;
+    cursor: pointer;
+}
+
+.refreshButton:hover {
+    color:#EAE6E5;
+    background-color: #8F8073;
+}
+
+.addButton {
+    color: #12130F;
+    background-color: #8F8073;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0,5px, 0,5px;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 3px;
+    border-color: #8F8073;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    color:#EAE6E5;
+    background-color: #8F8073;
+}
+
+.recipesSearch {
+    color: #12130F;
+    background-color: #8F8073;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0,5px, 0,5px;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #8F8073;
+    cursor: pointer;
+}
+
+.filters {
+    border-radius: 3px;
+    display: flex;
+    color: #12130F;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;    
+    padding: 10px 3px 0px;
+}
+
+.select {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.eachRecipe {
+    display: flex;
+    padding: 3px;
+}
+
+.linkRecetas {    
+    text-decoration: none;    
+}
+
+.linkRecetas:visited {
+    color: none;
+    text-decoration: none;
+}
+
+.allrecipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}

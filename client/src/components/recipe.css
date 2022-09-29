@@ -1,0 +1,60 @@
+
+.recipe {    
+    display: flex;
+    background-color: #baa798;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 300px;
+}
+
+.recipeImg {    
+    display: flex;    
+    background-color: #EAE6E5;
+    border-radius: 6px;
+    width: 160px;
+    height: 130px; 
+}
+
+.recipeName {
+    display: flex;
+    color: #12130F;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.43);    
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.recipeName:hover {
+    overflow: visible;
+}
+
+.dietcointainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.diets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    border-radius: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color: #EAE6E5;
+    color: #12130F;
+}
