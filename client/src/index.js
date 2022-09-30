@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store/index.js'
 import { BrowserRouter } from 'react-router-dom';
 
-
+//Se encierra la app dentro del provider para hacer uso del store en el manejo de los estados
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

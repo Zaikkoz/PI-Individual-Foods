@@ -1,5 +1,6 @@
 import { BACK_PAGE, GET_RECIPES, ADD_RECIPE, GET_RECIPE_DETAILS, DIETS_FILTER, ALPHABETICAL_SORT, HEALTH_SCORE_SORT, SEARCH_RECIPE, GET_DIETS } from '../action/types.js';
 
+//Establezco los estados iniciales
 const initialState = {
   recipes: [],
   allRecipes: [],
@@ -18,10 +19,15 @@ export default function rootReducer(state = initialState, action) {
           };
 
         case DIETS_FILTER:
+//          diets={e.diets? e.diets : e.Diets.map(e=>e.name)} />
           const all = state.allRecipes;
           let filtered;
           filtered = action.payload === 'all' ? all : all.filter(e=>{
-            return e.diets?.find(el => el === action.payload)
+            if  (e.Diets) {
+              return e.Diets.find(el => el.name === action.payload);
+            } else {
+              return e.diets?.find(el => el === action.payload);
+            }
           })
           console.log(filtered)
           return {

@@ -4,7 +4,7 @@ import LandingPage from './components/LandingPage.jsx';
 import HomePage from './components/HomePage.jsx';
 import AddRecipe from './components/AddRecipe.jsx';
 import RecipeDetails from './components/RecipeDetails';
-//Terminado al fin
+//Especifico la ruta a la que se dirige cada componente
 
 function App() {
   return (

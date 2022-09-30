@@ -31,5 +31,10 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: true,
     },
+    creadoPor: {
+      type: DataTypes.STRING,
+      defaultValue: "Federico Goldammer",
+      
+    }
   });
 };

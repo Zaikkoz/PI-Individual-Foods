@@ -65,6 +65,11 @@ export default function RecipeDetails(props) {
                 <li>{recipeDetails.steps}</li>
                 }</ul>
             </div>
+
+            <div>
+                <h3>Creado Por: {recipeDetails.creadoPor}</h3>
+            </div>   
+
             
             <Link to="/home"><button className="backButton">Go back to recipes</button></Link>
             
