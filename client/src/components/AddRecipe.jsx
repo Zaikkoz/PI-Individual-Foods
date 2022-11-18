@@ -157,7 +157,7 @@ export default function AddRecipe() {
                         {diets.map(d =>{
                             return (
                                 <div key={d} className="checks">
-                                    <label className="diets">{d}</label>
+                                    <label className="dietas">{d}</label>
                                     <input className="checks" type="checkbox" name={d} value={d} selected={input.diets.includes(d)} onChange={e => handleCheckBox(e)}/>
                                 </div>
                             )
