@@ -3,25 +3,19 @@ const axios = require('axios');
 const { Recipe, Diets } = require('../db');
 const { API_KEY } = process.env;
 const router = Router();
+const json = require ("../jsonData.json")
 
 
-const getApiInfo = async () => {
-    const apiUrl =  await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`);
-    
-    const apiInfo = await apiUrl.data.results.map(e => {
+const getJsonInfo = async () => {
+    const apiInfo = json.map(e => {
         return {
             id: e.id,
             image: e.image,
-            name: e.title,
+            name: e.name,
             diets: e.diets,
             summary: e.summary,
             healthScore: e.healthScore,
-            steps: e.analyzedInstructions[0]?.steps.map(e => {
-                return {
-                    number: e.number,
-                    step: e.step
-                }
-            })
+            steps: e.steps
         }
     })
     
@@ -41,7 +35,7 @@ const getDbInfo = async () => {
 }
 
 const getApiById = async (id) => {
-    return await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&addRecipeInformation=true`)
+    return await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&addRecipeInformation=true`)
 }
 
 const getDbById = async (id) => {
@@ -82,7 +76,7 @@ const recipeByID = async (req, res) => {
                 }
                 return res.status(200).send(recipeDetails); 
             }
-        } 
+        }
     } catch {
         return res.status(400).send('La receta no existe')
     }
@@ -92,7 +86,7 @@ const recipeByID = async (req, res) => {
 const allDataRecipes = async (req, res) => {
     const {name} = req.query;
 
-    const data = await getApiInfo();
+    const data = await getJsonInfo();
     const info = await getDbInfo();
     const allData = data.concat(info);
 
@@ -105,7 +99,7 @@ const allDataRecipes = async (req, res) => {
                 );
 
                 if (recipeQuery.length === 0) {
-                    const infoUrl =  await axios.get(/*`https://run.mocky.io/v3/84b3f19c-7642-4552-b69c-c53742badee5`*/`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true`);
+                    const infoUrl =  await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true`);
                     const info = await infoUrl.data.results.map(e => {
                         return {
                             id: e.id,

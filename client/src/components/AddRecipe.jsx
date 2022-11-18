@@ -125,21 +125,21 @@ export default function AddRecipe() {
                         </div>
                         <div className="nameInput">
                             <label className="msgs">Summary:</label>
-                            <textarea name="summary" type="text" rows="4" cols="30" value={input.summary} onChange={e => handleChange(e)}/>
+                            <textarea className="inputs" name="summary" type="text" rows="4" cols="30" value={input.summary} onChange={e => handleChange(e)}/>
                             {errors.summary && (
                                 <span className="errors">{errors.summary}</span>
                             )}
                         </div>
                         <div className="nameInput">
                             <label className="msgs">Health Score:</label>
-                            <input name="healthScore" type="number" value={input.healthScore} onChange={e => handleChange(e)}/>
+                            <input className="inputs" name="healthScore" type="number" value={input.healthScore} onChange={e => handleChange(e)}/>
                             {errors.healthScore && (
                                 <span className="errors">{errors.healthScore}</span>
                             )}
                         </div>
                         <div className="nameInput">
                             <label className="msgs">Steps:</label>
-                            <textarea name="steps" type="text" rows="4" cols="30" value={input.steps} onChange={e => handleChange(e)}/>
+                            <textarea className="inputs" name="steps" type="text" rows="4" cols="30" value={input.steps} onChange={e => handleChange(e)}/>
                             {errors.steps && (
                                 <span className="errors">{errors.steps}</span>
                             )}

@@ -1,10 +1,5 @@
 
 .addRecipe {    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    min-height: 100vw;
     display:flex;
     flex-direction: column;
     
@@ -23,40 +18,45 @@
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #8F8073;
+    
 }
 
 .goBackButton {
-    color: #12130F;
-    background-color: #8F8073;
-    font-size: 17px;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
     text-align: center;
     padding: 10px 25px;
     margin: 5px;
-    border-radius: 3px;
+    border-radius: 10px;
+    border-color: #e0d0c19f;
     cursor: pointer;
 }
 
 .goBackButton:hover {
     color:#EAE6E5;
-    background-color: #8F8073;
+    background-color: #e0d0c19f;
 }
 
 .submitButton {
-    color: #12130F;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 17px;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
     text-align: center;
     padding: 10px 25px;
     margin: 5px;
-    border-radius: 3px;
+    border-radius: 10px;
+    border-color: #e0d0c19f;
     cursor: pointer;
 }
 
 .submitButton:hover {
     color:#EAE6E5;
-    background-color: #8F8073;
+    background-color: #e0d0c19f;
 }
 
 .msg {
@@ -67,9 +67,10 @@
     padding-bottom: 35px;
     flex-direction: column;
     justify-content: center;    
-    color: #EAE6E5;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
+    color: #ffffff;
+    font-style: Helvetica;
+    font-size: 34px; 
+    text-shadow: 1px 1px 2px black;
 }
 
 .msgs {
@@ -77,10 +78,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom: 3px;
-    color: #12130F;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;    
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+    text-align: center;
+    border-color: #e0d0c19f;
+    cursor: pointer;
 }
 
 .nameInput {
@@ -88,12 +92,17 @@
     flex-direction: column;
     justify-content: center;
     padding: 7px;
+    
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
-    
+    border-radius: 6px;
+    border-color: #e0d0c19f;
+    background-color: #605a53b0;
+    font-size: 18px;
+    width: 700px;
 }
 
 .checkSelect {
@@ -107,9 +116,15 @@
 .diets {
     display: flex;
     flex-direction: column;
-    color: #EAE6E5;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #605a53b0;
 }
 
 .checks {
@@ -120,7 +135,8 @@
 }
 
 .errors {
-    font-family: "Times New Roman", Times, serif;  
-    color: #EAE6E5;
-    font-size: 14px;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
 }

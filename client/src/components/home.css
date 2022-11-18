@@ -4,90 +4,69 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;   
-    margin-bottom: 60px;   
-    margin-left: 60px;
-    margin-right: 60px;  
-    padding-left: 150px;
-    padding-right: 150px;
-    border-radius: 10px;
-    background-color: #5454549b;
-}
-
-.initialMsg {
-    padding-top: 3px;   
-    padding-bottom: 3px;   
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-right: 20px;
-    border-radius: 5px;
-    display: flex;
-    color: #12130F;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 50px;
-    font-weight: 700;    
-    margin-top: 60;
-    margin-bottom: 25px;
-    text-shadow: 2px 1px 2px rgba(0,0,0,0.43);
+    padding-left: 20px;
 }
 
 .refreshButton {
-    color: #12130F;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
-    text-shadow: 0,5px, 0,5px;
-    font-size: 17px;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
     text-align: center;
     padding: 10px 25px;
     margin: 5px;
-    border-radius: 3px;
-    border-color: #8F8073;
+    border-radius: 10px;
+    border-color: #e0d0c19f;
     cursor: pointer;
 }
 
 .refreshButton:hover {
     color:#EAE6E5;
-    background-color: #8F8073;
+    background-color: #e0d0c19f;
 }
 
 .addButton {
-    color: #12130F;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
-    text-shadow: 0,5px, 0,5px;
-    font-size: 17px;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
     text-align: center;
     padding: 10px 25px;
     margin: 5px;
-    border-radius: 3px;
-    border-color: #8F8073;
+    border-radius: 10px;
+    border-color: #e0d0c19f;
     cursor: pointer;
 }
 
 .addButton:hover {
     color:#EAE6E5;
-    background-color: #8F8073;
+    background-color: #e0d0c19f;
 }
 
 .recipesSearch {
     color: #12130F;
-    background-color: #8F8073;
-    font-family: "Times New Roman", Times, serif;
+    font-style: Helvetica;
     text-shadow: 0,5px, 0,5px;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 15px;
     margin: 10px;
     border-radius: 5px;
     border-color: #8F8073;
-    cursor: pointer;
+    width: 1250px;
+    height: 1100px;
 }
 
 .filters {
     border-radius: 3px;
     display: flex;
-    color: #12130F;
-    font-family: "Times New Roman", Times, serif;
+    color: #ffffff;
+    font-style: Helvetica;
     font-weight: 500;    
     padding: 10px 3px 0px;
 }
@@ -101,6 +80,26 @@
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+}
+
+.select0 {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-style: Helvetica;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
 }
 
 .eachRecipe {

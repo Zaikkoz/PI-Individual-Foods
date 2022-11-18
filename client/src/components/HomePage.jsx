@@ -20,7 +20,7 @@ export default function Home() {
     
     
     const [page, setPage] = useState(1);
-    const [recipesPage, setRecipesPage] = useState(9);
+    const [recipesPage, setRecipesPage] = useState(8);
     
     const quantityRecipesPage = page * recipesPage;
     const firstRecipePage = quantityRecipesPage - recipesPage;
@@ -65,29 +65,28 @@ export default function Home() {
     return(
         <div className='box'>
         <div className="home">
-            <h1 className="initialMsg">Recetas</h1>
             <div>
-                <button className="refreshButton" onClick={handleClick}>Refrescar busqueda</button>
+                <button className="refreshButton" onClick={handleClick}>Refresh search</button>
                 <Link to="/recipe">
-                    <button className="addButton">Agregar receta</button>
+                    <button className="addButton">Add recipe</button>
                 </Link>
             </div>
             <div className='recipesSearch'>
             <div className="select">
-                <label className="filters">Ordenar:</label>
-                <select className="select" name="alphabetical" onChange={e => handleAlphabeticalSort(e)}>
-                    <option disabled selected>Alfabetico</option>
+                <label className="filters">Order:</label>
+                <select className="select0" name="alphabetical" onChange={e => handleAlphabeticalSort(e)}>
+                    <option disabled selected>Alphabetical</option>
                     <option value="atoz">A - Z</option>
                     <option value="ztoa">Z - A</option>
                 </select>
-                <select className="select" name="numerical" onChange={e => handleHealthScoreSort(e)}>
-                    <option disabled selected>Puntaje de comida saludable</option>
-                    <option value="asc">De minimo a maximo</option>
-                    <option value="desc">De maximo a minimo</option>
+                <select className="select0" name="numerical" onChange={e => handleHealthScoreSort(e)}>
+                    <option disabled selected>Healthiness score</option>
+                    <option value="asc">Min to Max</option>
+                    <option value="desc">Max to Min</option>
                 </select>
-                <label className="filters">Dietas:</label>
-                <select className="select" name="diets" onChange={e => handleDietsFilter(e)}>
-                    <option disabled selected>Seleccionar...</option>
+                <label className="filters">Diets:</label>
+                <select className="select0" name="diets" onChange={e => handleDietsFilter(e)}>
+                    <option disabled selected>Select...</option>
                     <option value="gluten free">Gluten Free</option>
                     <option value="ketogenic">Keto</option>
                     <option value="vegetarian">Vegetarian</option>

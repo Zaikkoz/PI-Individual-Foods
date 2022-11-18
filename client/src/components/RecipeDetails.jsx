@@ -47,29 +47,24 @@ export default function RecipeDetails(props) {
             </div>
 
             <div className="ddsh">
-                <h3 className="texts">Summary: </h3>
-                <p className="summary">{recipeDetails.summary?.replace(/<[^>]*>/g, '')}</p>
-            </div>
-            
-            <div className="ddsh">
                 <h3 className="scores">Health Score: {recipeDetails.healthScore}</h3>
             </div>   
 
             <div className="ddsh">
+                <h3 className="texts">Summary: </h3>
+                <p className="summary">{recipeDetails.summary?.replace(/<[^>]*>/g, '')}</p>
+            </div>
+
+            <div className="ddsh">
                 <h3 className="texts">Steps: </h3>
-                <ul className="steps">{Array.isArray(recipeDetails.steps) ? recipeDetails.steps.map(e => {
+                <ul>{Array.isArray(recipeDetails.steps) ? recipeDetails.steps.map(e => {
                     return(
-                        <li key={e.number}>{e.step}</li>
+                        <li className="steps" key={e.number}>{e.step}</li>
                         )
                 }) :
                 <li>{recipeDetails.steps}</li>
                 }</ul>
             </div>
-
-            <div>
-                <h3>Creado Por: {recipeDetails.creadoPor}</h3>
-            </div>   
-
             
             <Link to="/home"><button className="backButton">Go back to recipes</button></Link>
             

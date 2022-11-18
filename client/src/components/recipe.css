@@ -1,35 +1,59 @@
 
 .recipe {    
     display: flex;
-    background-color: #baa798;
+    background-color: #605a53b0;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
     flex-direction: column;
     align-items: center;
-    width: 150px;
-    padding: 30px;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    height: 300px;
+    width: 245px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 375px;
+    border-radius: 5px;
+}
+
+.recipe:hover {
+    transition: 100ms ease-in-out;
+    display: flex;
+    background-color: #837a70e5;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    flex-direction: column;
+    align-items: center;
+    width: 255px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 380px;
     border-radius: 4px;
 }
 
 .recipeImg {    
     display: flex;    
     background-color: #EAE6E5;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.658);
     border-radius: 6px;
-    width: 160px;
-    height: 130px;
+    width: 270px;
+    height: 170px;
 }
 
 .recipeName {
     display: flex;
-    color: #12130F;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.43);    
     margin-bottom: 3px;
-    margin-top: 3px;
+    margin-top: 6px;
 }
 
 .recipeName:hover {
@@ -37,6 +61,8 @@
 }
 
 .dietcointainer {
+    margin-top: 7px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -56,7 +82,9 @@
     border-radius: 3px;
     margin-top: 1px;
     margin-bottom: 1px;
-    background-color: #EAE6E5;
-    font-size: 12px;
-    color: #12130F;
+    background-color: #e0d0c19f;
+    font-size: 16px;
+    color: #ffffff;
+    font-style: Helvetica;
+    text-shadow: 1px 1px 2px black;
 }
