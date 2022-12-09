@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const axios = require('axios');
 const { Recipe, Diets } = require('../db');
-const { API_KEY } = process.env;
+const { API_KEY } = require('../../config.js');
 const router = Router();
 const json = require ("../jsonData.json")
 
